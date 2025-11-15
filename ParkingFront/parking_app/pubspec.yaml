@@ -1,0 +1,49 @@
+name: parking_app
+description: "A new Flutter project."
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  provider: ^6.0.0
+  http: ^0.13.4
+  flutter_secure_storage: ^4.2.1
+  shared_preferences: ^2.0.15
+  path_provider: ^2.0.9
+  fluttertoast: ^8.0.9
+  geolocator: ^9.0.2
+  geocoding: ^2.0.4
+  location: ^4.4.0
+  intl: ^0.17.0
+  flutter_lints: ^2.0.0
+  fake_async: ^1.3.1
+  video_player: ^2.5.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - assets/car_image.png
+    - assets/logo1.png
+    - assets/golden2.png
+    - assets/car.png
+    - assets/assets/your_animation.mp4
+
+  # Uncomment the following lines if you need to include custom fonts in your project
+  # fonts:
+  #   - family: NotoSans
+  #     fonts:
+  #       - asset: fonts/NotoSans-Regular.ttf
+  #       - asset: fonts/NotoSans-Bold.ttf
+  #         weight: 700
+  #   - family: NotoSerif
+  #     fonts:
+  #       - asset: fonts/NotoSerif-Regular.ttf
+  #       - asset: fonts/NotoSerif-Bold.ttf
+  #         weight: 700
