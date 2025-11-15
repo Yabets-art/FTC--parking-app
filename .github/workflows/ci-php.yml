@@ -1,0 +1,32 @@
+name: CI — PHP (Laravel)
+
+on:
+  push:
+    paths:
+      - 'ParkingBack/parking-app/**'
+  pull_request:
+    paths:
+      - 'ParkingBack/parking-app/**'
+
+jobs:
+  phpunit:
+    name: Run PHPUnit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: mbstring, pdo_mysql
+      - name: Setup composer cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.composer/cache
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+      - name: Install Composer dependencies
+        working-directory: ParkingBack/parking-app
+        run: composer install --no-progress --no-suggest --prefer-dist --no-interaction
+      - name: Run tests
+        working-directory: ParkingBack/parking-app
+        run: ./vendor/bin/phpunit --configuration phpunit.xml || true

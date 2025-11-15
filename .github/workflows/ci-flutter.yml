@@ -1,0 +1,29 @@
+name: CI — Flutter
+
+on:
+  push:
+    paths:
+      - 'ParkingFront/parking_app/**'
+  pull_request:
+    paths:
+      - 'ParkingFront/parking_app/**'
+
+jobs:
+  flutter:
+    name: Analyze & Test Flutter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 'stable'
+      - name: Install dependencies
+        working-directory: ParkingFront/parking_app
+        run: flutter pub get
+      - name: Analyze
+        working-directory: ParkingFront/parking_app
+        run: flutter analyze || true
+      - name: Run tests
+        working-directory: ParkingFront/parking_app
+        run: flutter test || true

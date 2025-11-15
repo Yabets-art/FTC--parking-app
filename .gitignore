@@ -1,0 +1,14 @@
+/.idea/
+/.vscode/
+/.DS_Store
+/.env
+/*.iml
+ParkingFront/.idea/
+ParkingFront/fonts/
+ParkingFront/parking-app.sql
+ParkingBack/parking-app/vendor/
+ParkingBack/parking-app/node_modules/
+ParkingBack/parking-app/.env
+ParkingBack/parking-app/storage/
+ParkingBack/parking-app/bootstrap/cache/
+ParkingBack/parking-app/public/storage
