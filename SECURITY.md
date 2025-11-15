@@ -6,7 +6,7 @@ Preferred contact methods:
 
 - Open a private issue by selecting the "Security" contact option on this repository, or
 - Contact the repository owner on GitHub: `https://github.com/Yabets-art`.
-- (Optional) Email: `replace-with-your-email@example.com` — replace this with a monitored security contact address.
+- (Optional) Email: `yabetsd29@gmail.com` — replace this with a monitored security contact address.
 
 When reporting, include:
 - A concise description of the vulnerability
