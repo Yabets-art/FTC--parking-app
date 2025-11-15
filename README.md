@@ -1,4 +1,8 @@
+
 # FTC—Parking App
+
+![PHP CI](https://github.com/Yabets-art/FTC--parking-app/actions/workflows/ci-php.yml/badge.svg)
+![Flutter CI](https://github.com/Yabets-art/FTC--parking-app/actions/workflows/ci-flutter.yml/badge.svg)
 
 A full-stack parking management application consisting of a Laravel backend (API + admin panel) and a Flutter mobile/web frontend. This repository contains both backend and frontend code and is structured to make development, testing, and CI straightforward.
 
